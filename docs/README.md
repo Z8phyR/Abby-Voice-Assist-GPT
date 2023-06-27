@@ -1,7 +1,8 @@
 # Abby - Your Personal Assistant
 
 Abby is a state-of-the-art voice assistant, powered by OpenAI's GPT-4. Designed with customization in mind, Abby allows you to adjust its personality, responses, and more through a simple configuration file. Abby is interactive and can have conversations, provide information, perform tasks, and even tell jokes. With a user-friendly graphical interface and a passive listening mode, Abby is always ready to assist you.
-Features
+
+## Features
 
 - Conversational Interface: Abby uses GPT-4, a language model by OpenAI, to understand and participate in natural language conversations.
 - Passive Listening: Abby is always ready to help and can be activated using a trigger phrase.
