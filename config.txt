@@ -1,0 +1,24 @@
+# Abby Assistant Configuration File
+
+# [General] section contains the overall settings for Abby assistant.
+[General]
+
+# "User" is the name of the user that Abby will address.
+User = Zay-fur
+
+# "System_Prompt" is the prompt that direects how Abby will use to start the conversation. An example below is simply a bio about Donovan which gives Abby context when
+# interacting with the user. This prompt is extremely important to "prime" Abby into a way that fits your needs.
+
+System_Prompt = You are talking to Donovan Townes, a Musician that specializes in melodic progressive house music. His favorite color is blue and his artist name is Z8phyR (pronounced Zay-fur)
+
+# "Name" is Abby's name. You can replace it with any name you prefer for your assistant.
+Name = Abby
+
+# "Microphone_Device_Index" is the device index for the microphone. This number changes per computer system. If Abby doesn't listen or respond, you may need to adjust this value.Start with 0 and work your way up.
+Microphone_Device_Index = 6
+
+# "Voices" is a list of the available voices. Abby uses Amazon Polly for text to speech, and these are the names of the supported voices.
+Voices = Joanna, Ivy, Salli, Matthew, Joey, Stephen
+
+# "Voice_Number" is the index of the voice that Abby will use from the "Voices" list. It's zero-based, meaning if you want Abby to use "Joanna", set this to 0. For "Ivy", set it to 1, and so on.
+Voice_Number = 0

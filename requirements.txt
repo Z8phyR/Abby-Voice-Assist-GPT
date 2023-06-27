@@ -1,0 +1,11 @@
+boto3
+configparser
+dotenv
+keyboard
+pygame
+pyttsx3
+pyinstaller
+SpeechRecognition
+winsound
+openai
+PyQt5
