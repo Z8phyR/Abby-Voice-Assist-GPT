@@ -24,4 +24,4 @@ Voices = Joanna, Ivy, Salli, Matthew, Joey, Stephen
 Voice_Number = 0
 
 # Text-to-Speech Engine - If you do not have an AWS (Amazon Polly) key, you can use the free engine (pyttsx3) that comes with Python although it will not sound as organic
-TTS_ENGINE = AWS
+TTS_ENGINE = pyttsx3
