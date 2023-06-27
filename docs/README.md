@@ -19,7 +19,7 @@ To start using Abby, follow these steps:
 
 3. Install the necessary packages using the requirements.txt file. (pip install -r requirements.txt)
 
-4. Launch Abby by running main.py.
+4. Launch Abby by running main.py. (or you can double click on main.pyw to run without the console)
 
 5. Interact by speaking your trigger phase into your microphone. End your interaction by saying `Goodbye (Name)`. Enjoy!
 

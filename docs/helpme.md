@@ -47,6 +47,11 @@ To run the program, execute the python script with:
 python script_name.py
 ```
 
+or you can double click on 
+```sh
+script_name.pyw
+```
+
 ### Customizing Abby
 
 To customize Abby's settings such as AWS credentials, user information, system prompts, voice selection, TTS engine, and microphone device index, you can edit the configuration in `config.txt`. You can also customize Abby's responses by editing the phrases in `thinking_messages.txt`.
