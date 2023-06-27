@@ -26,6 +26,7 @@ config.read('config.txt')
 USER = config.get('General', 'User')
 SYSTEM_PROMPT = config.get('General','System_Prompt')
 NAME = config.get('General','Name')
+TTS_ENGINE = config.get('General', 'TTS_ENGINE')
 voices_string = config.get('General', 'Voices')
 voices_list = voices_string.split(',')
 voice_number = int(config.get('General','Voice_Number'))
@@ -35,6 +36,7 @@ selected_voice = voices_list[voice_number].strip()
 AWS_ACCESS_KEY = os.getenv("AWS_ACCESS_KEY_ID")
 AWS_SECRET_KEY = os.getenv("AWS_SECRET_ACCESS_KEY")
 AWS_REGION = os.getenv("AWS_REGION")
+
 
 # Global Flags
 stop_speaking = False
@@ -93,18 +95,25 @@ def speak(text):
     global stop_speaking
     if stop_speaking:
         return
-    # Request speech synthesis
-    response = polly.synthesize_speech(Text=text, OutputFormat='mp3', VoiceId=selected_voice, Engine='neural')
+    if TTS_ENGINE.lower() == "aws":
+        # Request speech synthesis
+        response = polly.synthesize_speech(Text=text, OutputFormat='mp3', VoiceId=selected_voice, Engine='neural')
 
-    # Save the synthesized speech to a file
-    filename = "content/speech.mp3"
-    file = open(filename, 'wb')
-    file.write(response['AudioStream'].read())
-    file.close()
+        # Save the synthesized speech to a file
+        filename = "content/speech.mp3"
+        file = open(filename, 'wb')
+        file.write(response['AudioStream'].read())
+        file.close()
 
-    # Play the speech file
-    play_mp3(filename)
-    play_sound("beep-1.wav")
+        # Play the speech file
+        play_mp3(filename)
+        play_sound("beep-1.wav")
+    elif TTS_ENGINE.lower() == "pyttsx3":
+        engine.say(text)
+        play_sound("beep-1.wav")
+        engine.runAndWait()
+    else:
+        print("Invalid TTS engine configuration")
 
 def play_mp3(file_path):
     global stop_speaking

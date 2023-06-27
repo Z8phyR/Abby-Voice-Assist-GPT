@@ -22,3 +22,6 @@ Voices = Joanna, Ivy, Salli, Matthew, Joey, Stephen
 
 # "Voice_Number" is the index of the voice that Abby will use from the "Voices" list. It's zero-based, meaning if you want Abby to use "Joanna", set this to 0. For "Ivy", set it to 1, and so on.
 Voice_Number = 0
+
+# Text-to-Speech Engine - If you do not have an AWS (Amazon Polly) key, you can use the free engine (pyttsx3) that comes with Python although it will not sound as organic
+TTS_ENGINE = AWS
