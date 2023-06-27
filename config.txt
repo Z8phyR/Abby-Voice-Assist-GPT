@@ -15,7 +15,7 @@ System_Prompt = You are talking to Donovan Townes, a Musician that specializes i
 Name = Abby
 
 # "Microphone_Device_Index" is the device index for the microphone. This number changes per computer system. If Abby doesn't listen or respond, you may need to adjust this value.Start with 0 and work your way up.
-Microphone_Device_Index = 6
+Microphone_Device_Index = 0
 
 # "Voices" is a list of the available voices. Abby uses Amazon Polly for text to speech, and these are the names of the supported voices.
 Voices = Joanna, Ivy, Salli, Matthew, Joey, Stephen

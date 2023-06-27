@@ -20,6 +20,8 @@ To start using Abby, follow these steps:
 
 3. Install the necessary packages using the requirements.txt file. (pip install -r requirements.txt)
 
+4. Navigate and locate the `config.txt` file - you will have to change settings inside of this file.
+
 4. Launch Abby by running main.py. (or you can double click on main.pyw to run without the console)
 
 5. Interact by speaking your trigger phase into your microphone. End your interaction by saying `Goodbye (Name)`. Enjoy!
@@ -27,7 +29,10 @@ To start using Abby, follow these steps:
 ## Configuration
 
 You can customize Abby's behavior and responses by editing the `config.txt` file in the root directory of the repository. This configuration file allows you to define *Abby's name, trigger phrase, user details, and much more.*
-Running Abby
+
+Your microphone setting will be different. If Abby doesn't respond or listen, changing your device number will likely work.
+
+## Running Abby
 
 Abby is designed to run in the background, passively listening for the trigger phrase. When the trigger phrase is recognized, Abby will start an active conversation with the user. You can also interact with Abby through the GUI and can stop the conversation at any point by pressing the "ESC" key.
 
