@@ -1,83 +1,32 @@
-# Voice Assistant Abby
----
+# Abby - Your Personal Assistant
 
-This is a custom voice assistant named Abby, created using Python. Abby specializes in assisting with tasks and providing information about the user (by editing a system variable). It uses GPT technology for generating responses and retains conversation history for the duration of each run. 
+Abby is a state-of-the-art voice assistant, powered by OpenAI's GPT-4. Designed with customization in mind, Abby allows you to adjust its personality, responses, and more through a simple configuration file. Abby is interactive and can have conversations, provide information, perform tasks, and even tell jokes. With a user-friendly graphical interface and a passive listening mode, Abby is always ready to assist you.
+Features
 
-### Features
+- Conversational Interface: Abby uses GPT-4, a language model by OpenAI, to understand and participate in natural language conversations.
+- Passive Listening: Abby is always ready to help and can be activated using a trigger phrase.
+- Customizable Personality: Through a simple configuration file, you can adjust Abby's personality, default phrases, and user-specific details to create a truly personalized experience.
+- User-friendly GUI: Abby is operated through a graphical interface, making it accessible for all types of users.
+- Flexible: Abby's modular code structure allows developers to extend Abby's capabilities as required.
 
-- Abby listens passively and responds when she hears the trigger phrase "Hey Abby".
-- Abby can continue the conversation as long as the user continues speaking.
-- Abby automatically adjusts to ambient noise to improve speech recognition.
-- Abby uses OpenAI's GPT model for generating responses.
+## Getting Started
 
-## Prerequisites
-This script requires Python and a few dependencies. To install the required Python libraries, navigate to the project's directory in your terminal/command prompt and run: pip install -r requirements.txt
+To start using Abby, follow these steps:
 
-### You need to have the following installed:
-
-* Python 3.8+
-* Pyttsx3: pip install pyttsx3
-* SpeechRecognition: pip install SpeechRecognition
-* OpenAI Python client: pip install openai
-  - (You need an [OpenAI API Key](https://openai.com). If you don't have one, you can [contact me](https://discord.gg/yUWTXdWemE) about creating a key for you, depending on your use case - it shouldn't be an issue)
-* Winsound: This is part of Python's standard library, so you don't need to install it separately.
-
-## Running the Script
-
-To start Abby, navigate to the project's directory in your terminal/command prompt and run: 
-
-```python
-python AbbyVA.py
-```
-
-To interact with Abby, say _"Hey Abby"_.
-To close the program say _"Goodbye Abby"_ or _"Exit Program"_
+1 Clone this repository to your local machine.
+2 Navigate to the cloned directory.
+3 Install the necessary packages using the requirements.txt file. (pip install -r requirements.txt)
+4 Launch Abby by running main.py.
 
 ## Configuration
 
+You can customize Abby's behavior and responses by editing the config.txt file in the root directory of the repository. This configuration file allows you to define Abby's name, trigger phrase, user details, and much more.
+Running Abby
 
-You can configure Abby's behavior in the following ways:
+Abby is designed to run in the background, passively listening for the trigger phrase. When the trigger phrase is recognized, Abby will start an active conversation with the user. You can also interact with Abby through the GUI and can stop the conversation at any point by pressing the "ESC" key.
+Contributing
 
-1. Modify the SYSTEM_PROMPT constant to personalize the assistant's context.
-2. Change the device index of the microphone you want to use. [More Below]     
-3. Adjust the parameters of the speech recognition functions to suit your needs.
-
-## Limitations
-
-Abby relies on the Google speech recognition API, which requires an internet connection and may not work perfectly with all types of voices or accents.
-
-Abby's speech-to-text capability is currently implemented in English only.
-
-## Troubleshooting
-
-Ensure you have the latest versions of all dependencies by running `pip install --upgrade -r requirements.txt`.
-
-If Abby isn't responding to your voice, make sure you've configured the correct microphone device index.
-
-If you're having trouble with the beep sounds, ensure that the .wav files are in the same directory as the script and that the paths to them in the script are correct.
-
-### Configuring your Microphone
-
-This script is currently configured to use a specific microphone device with the index `6` (this corresponds to the line `mic = sr.Microphone(device_index=6)` in the script). This might not correspond to the correct microphone on your system.
-
-To list the available microphones and find the correct device index, you can use the following Python script:
-
-
-```python
-import speech_recognition as sr
-
-for i, microphone_name in enumerate(sr.Microphone.list_microphone_names()):
-    print(i, microphone_name)
-```
-
-This script will output the names of your available microphone devices along with their corresponding indices. You can run this script and speak into your microphone to see which device is picking up your voice. Once you have the correct device index, replace 6 in mic = sr.Microphone(device_index=6) with the correct index.
-
-
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-Created by [Donovan Townes](https://linktr.ee/z8phyr) 
-
+If you're a developer and want to contribute to Abby's development, you're more than welcome. Please follow the standard fork -> patch -> pull request workflow.
 License
 
-MIT
+Abby is released under the [MIT License](https://github.com/user/repo/blob/main/LICENSE).
