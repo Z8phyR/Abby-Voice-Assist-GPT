@@ -36,5 +36,7 @@ Abby is designed to run in the background, passively listening for the trigger p
 If you're a developer and want to contribute to Abby's development, you're more than welcome. Please follow the standard fork -> patch -> pull request workflow.
 
 ## License
-Abby was created with love ❤ by [Donovan Townes](https://discord.gg/yUWTXdWemE)
 Abby is released under the [MIT License](https://github.com/user/repo/blob/main/LICENSE).
+
+
+Abby was created with love ❤ by [Donovan Townes](https://discord.gg/yUWTXdWemE)
