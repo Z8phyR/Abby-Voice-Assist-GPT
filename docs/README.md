@@ -13,10 +13,13 @@ Features
 
 To start using Abby, follow these steps:
 
-1 Clone this repository to your local machine.
-2 Navigate to the cloned directory.
-3 Install the necessary packages using the requirements.txt file. (pip install -r requirements.txt)
-4 Launch Abby by running main.py.
+1. Clone this repository to your local machine.
+
+2. Navigate to the cloned directory.
+
+3. Install the necessary packages using the requirements.txt file. (pip install -r requirements.txt)
+
+4. Launch Abby by running main.py.
 
 ## Configuration
 
