@@ -21,9 +21,11 @@ To start using Abby, follow these steps:
 
 4. Launch Abby by running main.py.
 
+5. Interact by speaking your trigger phase into your microphone. End your interaction by saying `Goodbye (Name)`. Enjoy!
+
 ## Configuration
 
-You can customize Abby's behavior and responses by editing the config.txt file in the root directory of the repository. This configuration file allows you to define Abby's name, trigger phrase, user details, and much more.
+You can customize Abby's behavior and responses by editing the `config.txt` file in the root directory of the repository. This configuration file allows you to define *Abby's name, trigger phrase, user details, and much more.*
 Running Abby
 
 Abby is designed to run in the background, passively listening for the trigger phrase. When the trigger phrase is recognized, Abby will start an active conversation with the user. You can also interact with Abby through the GUI and can stop the conversation at any point by pressing the "ESC" key.
@@ -32,6 +34,7 @@ Abby is designed to run in the background, passively listening for the trigger p
 ## Contributing
 
 If you're a developer and want to contribute to Abby's development, you're more than welcome. Please follow the standard fork -> patch -> pull request workflow.
-License
 
+## License
+Abby was created with love ❤ by [Donovan Townes](https://discord.gg/yUWTXdWemE)
 Abby is released under the [MIT License](https://github.com/user/repo/blob/main/LICENSE).
