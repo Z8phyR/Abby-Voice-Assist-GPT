@@ -69,6 +69,14 @@ Abby uses OpenAI's GPT-3 model to generate responses to the user's text commands
 
 Abby can be activated by saying "hey Abby", and deactivated by saying "goodbye Abby". During a conversation, Abby will continuously listen for the user's commands and generate responses.
 
+### 5. Conversation History
+
+Abby has the ability to retain the context of the current conversation. She maintains the history of the last 9 messages exchanged between the user and herself during a single run of the program. This enables a more cohesive and engaging interaction by allowing Abby to generate responses that take into account prior exchanges.
+
+However, it's important to note that the conversation history is ephemeral and is reset when the program is terminated. This means that every new run of the program starts with a fresh conversation without any context from previous sessions.
+
+Future improvements to Abby will include persisting conversation history to a local database. This will allow the continuation of interactions across different runs of the program, enabling an even more seamless and persistent user experience.
+
 ## Troubleshooting
 
 If Abby isn't responding correctly, please ensure that your microphone is properly configured and that the Google Speech Recognition API is accessible.
