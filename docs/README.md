@@ -27,7 +27,9 @@ You can customize Abby's behavior and responses by editing the config.txt file i
 Running Abby
 
 Abby is designed to run in the background, passively listening for the trigger phrase. When the trigger phrase is recognized, Abby will start an active conversation with the user. You can also interact with Abby through the GUI and can stop the conversation at any point by pressing the "ESC" key.
-Contributing
+
+
+## Contributing
 
 If you're a developer and want to contribute to Abby's development, you're more than welcome. Please follow the standard fork -> patch -> pull request workflow.
 License
