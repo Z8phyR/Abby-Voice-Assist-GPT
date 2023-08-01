@@ -1,14 +1,7 @@
-import threading
-import Abby
-import abby_gui
+import Abby_GUI as GUI
 
 def main():
-    # Start Abby in a new thread
-    abby_thread = threading.Thread(target=Abby.start_listening)
-    abby_thread.start()
-
-    # Start GUI in the main thread
-    abby_gui.start_gui()
+    GUI.start_gui()
 
 if __name__ == "__main__":
     main()
